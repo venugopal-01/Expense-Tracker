@@ -1,0 +1,75 @@
+/* AddExpenseForm.css */
+.expense-form-section {
+  /* margin-top: 2rem; */
+  padding-top: 50px; 
+  padding-bottom: 40px;
+  background-color: #1ABC9C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.expense-form-section h2{
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.expense-form {
+  background: #DCE3E9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.expense-form input,
+.expense-form select,
+.expense-form button {
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: 1px solid #7F8C8D;
+  border-radius: 5px;
+}
+
+.expense-form input:focus,
+.expense-form select:focus,
+.expense-form button:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+.expense-form button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.expense-form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.expense-form button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+  .expense-form {
+    padding: 1rem;
+  }
+
+  .expense-form input,
+  .expense-form select,
+  .expense-form button {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}

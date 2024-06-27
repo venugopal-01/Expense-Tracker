@@ -1,0 +1,147 @@
+/* ExpenseList.css */
+.expense-list {
+  padding: 2rem 1rem;   
+  background-color: #f4f6f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* margin-top: 2rem; */
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.expense-list h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.filter {
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.filter label {
+  margin-right: 1rem;
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.filter select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+.filter select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.expense-item {
+  display: grid;
+  grid-template-columns: 100fr 25fr;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.expense-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.expense-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.expense-details span {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.expense-details span p {
+  display: inline;
+  font-weight: bold;
+  color: rgb(30 141 0);
+}
+
+.expense-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.expense-actions button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.expense-actions #Delete {
+  background-color: red;
+}
+
+.expense-actions #Delete:hover {
+  background-color: #DCE3E9;
+  color: black;
+}
+.expense-actions button:hover {
+  background-color: #DCE3E9;
+  color: black;
+}
+
+.total-amount {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  text-align: right;
+  color: #333;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .expense-item {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  .expense-details {
+    grid-template-columns: 1fr;
+  }
+
+  .expense-actions {
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .total-amount {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
