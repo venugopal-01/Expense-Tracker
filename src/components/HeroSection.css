@@ -6,7 +6,6 @@
   padding: 4rem 2rem;
   background-color: #3498DB;
   animation: fadeIn 1s ease-in;
-  /* margin-top: 60px; Adjust to prevent overlap with fixed navbar */
 }
 
 .hero-text {
@@ -36,7 +35,7 @@
 }
 
 .hero-image img {
-  max-width: 80%; /* Adjust as needed for the desired size */
+  max-width: 80%; 
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
