@@ -21,8 +21,8 @@
 
 .navbar-links {
   display: flex;
-  gap: 1.5rem; /* Adjust gap between links */
-  flex-wrap: wrap; /* Allow wrapping of links */
+  gap: 1.5rem; 
+  flex-wrap: wrap; 
 }
 
 .navbar-links a {
